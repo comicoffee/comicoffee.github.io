@@ -5,16 +5,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- STOP SAFARI FROM CONVERING NUMBERS TO TELEPHONE -->
+    <meta name="format-detection" content="telephone=no" />
+
     <title>COMICOFFEE</title>
     <link href="css/index.css" rel="stylesheet">
-
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
 </head>
 
 <body>
+    <main>
+        <header>
+            <div class="filler"></div>
+            <img class="logo" src="images/Logo2_transparent.png">
+            <div class="subheadings">
+                <div class="subheading">comics</div>
+                <div class="subheading">coffee</div>
+                <div class="subheading">shakes</div>
+                <div class="subheading">waffles</div>
+                <div class="subheading">paninis</div>
+            </div>
+        </header>
+        <section class="whenWhere test">
 
-    <img src="images/Logo2_transparent.png" alt="">
+            <img class="map" src="images/map.png">
+            <div class="address-container">
+                <address>
+                    59 Pyle Str<br>
+                    Newport<br>
+                    IOW<br>
+                    PO30 1UL
+                </address>
+
+            </div>
+
+            <div class="times">
+                <span class="times-content">
+                        <div class="times-days">Mon - Sat</div>
+                <div>0800 - 1800</div>
+                </span>
+                <span class="times-content">
+                    <span class="times-days">Sun</span><br>
+                <span>0900 - 1600</span>
+                </span>
+            </div>
+
+            <div class="panel--title">
+                <div class="panel--whenWhere--title">
+                    When &amp; Where
+
+                </div>
+            </div>
+        </section>
+
+        <section class="social">
+            <div class="left-panel panel">
+                <img src="images/5.jpg" class="social-img" alt="">
+            </div>
+            <div class="fbStatus">
+                Coming soon ... <br/>Facebook &amp; Instagram updates on our site.
+            </div>
+            <div class="right-panel panel">
+                <img src="images/9.jpg" class="social-img" alt="">
+            </div>
+            <a href="https://facebook.com/ComiCoffeeUK" class="left-panel">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com/comicoffeeuk" class="right-panel">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </section>
+
+        <section class="eventsMenu">
+
+            <div class="events"></div>
+            <div class="panel--footer--title">
+                <div class="panel--events--title">
+                    Events
+                </div>
+            </div>
+
+            <div class="shake ">
+                <div>
+                    shake of the week
+                </div>
+                <div>
+                    is tasty
+                </div>
+            </div>
+
+            <div class="panel--title">
+                <div class="panel--menu--title ">
+                    menu
+                </div>
+            </div>
+            <div class="menu ">
+                <div class="menuItems ">
+                    <div class="menuItem menuItemHeader ">Coming Soon...</div>
+                    <div class="menuItem ">An online menu</div>
+                    <div class="menuItem ">Or, why not come and visit to find out</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel__gallery">
+
+            <div class="portfolio" id="gallery">
+
+            </div>
+            <div class="panel--title">
+                <div class="panel--gallery--title">Gallery</div>
+            </div>
+        </section>
+
+        <section class="about ">
+            <div class="aboutContent ">
+                <p>
+                    ComiCoffee is a hybrid coffee house/comic store offering a warm, inviting space to hang out, drink speciality beverages and read your favourite comics or novels.
+                </p>
+                <p>
+                    We are a proud independent coffee house that serves great coffee made by talented baristas, in a relaxed and welcoming environment where your time is your own.
+                </p>
+                <p>
+                    The first coffee shop on The Isle of Wight that combines the Comic & Pop culture with a hospitality outlet. Selling a range of memorabilia as well as a fantastic range of freshly made products.
+                </p>
+            </div>
+            <div class="panel--title">
+                <div class="panel--about--title">
+                    About Us
+                </div>
+
+            </div>
+        </section>
+
+        <div class="galleryViewer" id="galleryViewer">
+
+
+        </div>
+
+    </main>
+
+    <script defer src="js/gallery-builder.js "></script>
 
 </body>
 
-
 </html>
+
+
+<!-- <div class="event">
+    <div class="eventDate">
+        <div class="eventDateDay">01</div>
+        <div class="eventDateMonth">Jan</div>
+    </div>
+    <div class="eventBody">Hello World!</div>
+</div>
+-->
