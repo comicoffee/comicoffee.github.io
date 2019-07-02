@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,700");
+.text p:target {
+  background: red;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10px;
+      grid-template-columns: 10px;
+  grid-gap: 0.1em;
+  background: #707070;
+  padding: 0.5em;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
+  grid-auto-columns: calc(40% - 20px * 2);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media screen and (min-width: 500px) {
+  .portfolio {
+    grid-auto-columns: calc(30% - 20px * 2);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .portfolio {
+    grid-auto-columns: calc(20% - 20px * 2);
+  }
+}
+
+.portfolio:before, .portfolio:after {
+  content: "";
+  width: 10px;
+}
+
+.portfolio:-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background: white;
+  scroll-snap-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio__image {
+  max-width: 30vw;
+  max-height: 200px;
+}
+
+.portfolio-lightbox__image {
+  max-height: 80vh;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.portfolio-lightbox {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.portfolio-lightbox:target {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  max-width: calc(100vw-1.6rem);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  height: 100vh;
+}
+
+.portfolio-lightbox__content {
+  position: relative;
+  width: 80vw;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio__lightbox__image {
+  margin-bottom: 1em;
+}
+
+.portfolio__image,
+.portfolio-lightbox__image {
+  width: 100%;
+  display: block;
+}
+
+.portfolio__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.close {
+  position: absolute;
+  -webkit-transform: translateX(0vw) translateY(1em);
+          transform: translateX(0vw) translateY(1em);
+  border: white 2px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2.5em;
+  height: 2em;
+  background: #A81715;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -ms-flex-item-align: end;
+      align-self: end;
+  justify-self: center;
+}
+
+.portfolio__title {
+  padding: 0 0.5rem;
+}
+
+.portfolio__body {
+  padding: 0 0.5rem;
+}
+
+.close::after {
+  content: 'x';
+  color: white;
+}
+
+.panel__gallery {
+  display: -ms-grid;
+  display: grid;
+}
+
+.panel--title {
+  background: #707070;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  z-index: 10;
+  position: relative;
+  padding: 2px 8px 0px 6px;
+  margin-bottom: -6px;
+}
+
+.panel--title .panel--gallery--title {
+  font-size: 1.5rem;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+}
+/*# sourceMappingURL=lightbox.css.map */
