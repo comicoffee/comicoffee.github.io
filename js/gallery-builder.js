@@ -1,4 +1,4 @@
-let maxImages = 34;
+let maxImages = 69;
 let path = "images/";
 let gallery = document.querySelector("#gallery");
 let galleryViewer = document.querySelector("#galleryViewer");
