@@ -3,7 +3,7 @@ let path = "images/";
 let gallery = document.querySelector("#gallery");
 let galleryViewer = document.querySelector("#galleryViewer");
 
-for (let i = 1; i < maxImages; i++) {
+for (let i = maxImages; i > 0; i--) {
     // create the parent div to hold the thumbnail
     let portfolioItem = document.createElement("div");
     portfolioItem.setAttribute("class", "porfolio__item");
