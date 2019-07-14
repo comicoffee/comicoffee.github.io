@@ -352,6 +352,11 @@ i {
   border-left: var(--colour-ccGray) 3px solid;
 }
 
+.social .left-panel,
+.social .right-panel {
+  cursor: pointer;
+}
+
 .social .left-panel {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
