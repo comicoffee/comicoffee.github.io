@@ -7,12 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- STOP SAFARI FROM CONVERING NUMBERS TO TELEPHONE -->
     <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#A81715" />
 
     <title>COMICOFFEE</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link href="css/lightbox.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,14 +64,14 @@
         </section>
 
         <section class="social">
-            <div class="left-panel panel">
-                <img src="images/5.jpg" class="social-img" alt="">
+            <div class="left-panel panel" id="facebookPanel" onclick="window.open('https://www.facebook.com/ComiCoffeeUK/posts')">
+                <img id="facebookImage" src="images/5.jpg" class="social-img" alt="">
             </div>
-            <div class="fbStatus">
+            <div class="fbStatus" id="fbStatus">
                 Coming soon ... <br/>Facebook &amp; Instagram updates on our site.
             </div>
             <div class="right-panel panel">
-                <img src="images/9.jpg" class="social-img" alt="">
+                <img id="instagramImage" src="images/9.jpg" class="social-img" alt="">
             </div>
             <a href="https://facebook.com/ComiCoffeeUK" class="left-panel">
                 <i class="fab fa-facebook"></i>
@@ -91,7 +94,7 @@
                 <div>
                     shake of the week
                 </div>
-                <div>
+                <div id="shake">
                     is tasty
                 </div>
             </div>
@@ -102,7 +105,7 @@
                 </div>
             </div>
             <div class="menu ">
-                <div class="menuItems ">
+                <div class="menuItems " id="menu">
                     <div class="menuItem menuItemHeader ">Coming Soon...</div>
                     <div class="menuItem ">An online menu</div>
                     <div class="menuItem ">Or, why not come and visit to find out</div>
@@ -121,16 +124,8 @@
         </section>
 
         <section class="about ">
-            <div class="aboutContent ">
-                <p>
-                    ComiCoffee is a hybrid coffee house/comic store offering a warm, inviting space to hang out, drink speciality beverages and read your favourite comics or novels.
-                </p>
-                <p>
-                    We are a proud independent coffee house that serves great coffee made by talented baristas, in a relaxed and welcoming environment where your time is your own.
-                </p>
-                <p>
-                    The first coffee shop on The Isle of Wight that combines the Comic & Pop culture with a hospitality outlet. Selling a range of memorabilia as well as a fantastic range of freshly made products.
-                </p>
+            <div class="aboutContent " id="about">
+
             </div>
             <div class="panel--title">
                 <div class="panel--about--title">
@@ -147,7 +142,10 @@
 
     </main>
 
-    <script defer src="js/gallery-builder.js "></script>
+    <!-- <script rel="preload" as="script" src="js/lazy.js"></script> -->
+    <script rel="preload" as="script" src="js/gallery-builder.js "></script>
+    <script rel="preload" as="script" src="js/index.js"></script>
+    <script rel="preload" as="script" src="js/scrape.js"></script>
 
 </body>
 
