@@ -11,7 +11,9 @@ for (let i = maxImages; i > 0; i--) {
     let newImg = document.createElement("img");
     newImg.setAttribute("src", path + i + ".jpg");
     newImg.setAttribute("class", "portfolio__image");
-    newImg.setAttribute("onClick", "window.location='#portfolio-item-" + i +"';");
+    newImg.setAttribute("loading", "lazy");
+    newImg.setAttribute("onClick", "window.location='#portfolio-item-" + i + "';");
+    newImg.setAttribute("alt", "Photo taken from ComiCoffee");
     //add the image to the div
     portfolioItem.appendChild(newImg);
     //add the div to the gallery list
@@ -20,7 +22,7 @@ for (let i = maxImages; i > 0; i--) {
 
 
     let portfolioLightbox = document.createElement("div");
-    portfolioLightbox.setAttribute("id","portfolio-item-" + i);
+    portfolioLightbox.setAttribute("id", "portfolio-item-" + i);
     portfolioLightbox.setAttribute("class", "portfolio-lightbox");
 
     let portfolioLightboxContent = document.createElement("div");
@@ -38,7 +40,6 @@ for (let i = maxImages; i > 0; i--) {
     portfolioLightboxContent.appendChild(portfolioLightboxImage);
 
     portfolioLightbox.appendChild(portfolioLightboxContent);
-    
+
     galleryViewer.appendChild(portfolioLightbox);
 }
-
