@@ -4,8 +4,6 @@ async function getTheStuff() {
     });
     const data = await response.json();
 
-    console.log(data);
-
     const fbStatus = document.querySelector("#fbStatus");
     fbStatus.innerText = data.facebook.post;
     const fbImage = document.querySelector("#facebookImage");
