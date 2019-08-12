@@ -1,11 +1,7 @@
-const scrapeURL = "/extract";
-
 async function getTheStuff() {
-
-
-    // check the current db
-    //const dbsource = await fetch("db.json");
-    const response = await fetch("https://comicoffee.glitch.me/extract")
+    const response = await fetch("https://comicoffee.glitch.me/extract", {
+        mode: 'no-cors'
+    });
     const data = await response.json();
 
     console.log(data);
